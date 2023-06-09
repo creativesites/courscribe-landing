@@ -921,12 +921,39 @@
                             $('[data-submit-cu-v3-ai]').removeClass('btn-loading');
                             isSubmitting = false;
                             //console.error("Error: could not subscribe user to list", error);
+                            $.ajax({
+                                method: 'POST',
+                                url: 'https://api.convertkit.com/v3/forms/2038873/subscribe',
+                                data: {
+                                    api_key: 'EdIG8nJnDa_kgUJ1dkGVGg',
+                                    email: email
+                                },
+                                success: function (response) {
+                                    console.log('Subscribed to ConvertKit successfully!');
+                                },
+                                error: function (error) {
+                                    console.error('Error subscribing to ConvertKit:', error);
+                                }
+                            });
                         },
                         success: function (result) {
                             alert('Thank you for subscribing!');
                             $('[data-submit-cu-v3-ai]').removeClass('btn-loading');
 
-
+                            $.ajax({
+                                method: 'POST',
+                                url: 'https://api.convertkit.com/v3/forms/2038873/subscribe',
+                                data: {
+                                    api_key: 'EdIG8nJnDa_kgUJ1dkGVGg',
+                                    email: email
+                                },
+                                success: function (response) {
+                                    console.log('Subscribed to ConvertKit successfully!');
+                                },
+                                error: function (error) {
+                                    console.error('Error subscribing to ConvertKit:', error);
+                                }
+                            });
                             
                         }
                     });
@@ -1016,15 +1043,44 @@
                             $('[data-submit-cu-v3-ai]').removeClass('btn-loading');
                             isSubmitting = false;
                             //console.error("Error: could not subscribe user to list", error);
+                            $.ajax({
+                                method: 'POST',
+                                url: 'https://api.convertkit.com/v3/forms/2038873/subscribe',
+                                data: {
+                                    api_key: 'EdIG8nJnDa_kgUJ1dkGVGg',
+                                    email: email
+                                },
+                                success: function (response) {
+                                    console.log('Subscribed to ConvertKit successfully!');
+                                },
+                                error: function (error) {
+                                    console.error('Error subscribing to ConvertKit:', error);
+                                }
+                            });
                         },
                         success: function (result) {
                             alert('Thank you for subscribing!');
                             $('[data-submit-cu-v3-ai]').removeClass('btn-loading');
 
-
+                            $.ajax({
+                                method: 'POST',
+                                url: 'https://api.convertkit.com/v3/forms/2038873/subscribe',
+                                data: {
+                                    api_key: 'EdIG8nJnDa_kgUJ1dkGVGg',
+                                    email: email
+                                },
+                                success: function (response) {
+                                    console.log('Subscribed to ConvertKit successfully!');
+                                },
+                                error: function (error) {
+                                    console.error('Error subscribing to ConvertKit:', error);
+                                }
+                            });
                             
                         }
                     });
+                     // Additional POST request to ConvertKit API
+                    
                 }
 
             });
